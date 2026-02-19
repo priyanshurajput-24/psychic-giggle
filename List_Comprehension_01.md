@@ -61,5 +61,13 @@ result = ["Vowels" if i in ["a","e","i","o","u"] else "Consonants" for i in lett
 print(result)
 ```
 
+## Q10: Add "High-" prefix if value > 50 else "Low-".
+
+```python
+scores = [45, 80, 30, 90]
+result = [("High-" if i > 50 else "Low-") + str(i) for i in scores]
+print(result)
+```
+
 
 
