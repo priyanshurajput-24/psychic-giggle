@@ -47,7 +47,7 @@ print(m)
 
 ```python
 person = {"name": "Saniya", "city": "Chennai"}
-print("age" in person)
+print("Age" in person)
 ```
 
 ## 7. Problem: Find the sum of all values in the dictionary.
