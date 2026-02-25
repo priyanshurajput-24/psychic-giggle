@@ -141,7 +141,7 @@ r = data["student"]["name"]
 print(r)
 ```
 
-## Problem: Print the value which is >0
+## 16. Problem: Print the value which is >0
 
 ```python
 products = [
@@ -159,3 +159,23 @@ orders = [
 s = {p["name"] for p in products for o in orders if p["id"] == o["product_id"] and o["quantity"]>0}
 print(s)
 ```
+
+## 17. Problem:  Flatten the dict
+
+```python
+data = {"a": {"b": 1, "c": 2}}
+r = {f"{outer_k}.{inner_k}": v for outer_k,inner_v in data.items() for inner_k,v in inner_v.items()}
+print(r)
+```
+
+## 18. Problem: Count the frequency of words
+
+```python
+from collections import Counter
+s = "data science is fun data is powerful"
+words = s.split()
+result = Counter(words)
+print(dict(result))
+```
+
+
