@@ -140,3 +140,22 @@ data = {
 r = data["student"]["name"]
 print(r)
 ```
+
+## Problem: Print the value which is >0
+
+```python
+products = [
+    {"id": 1, "name": "Laptop"},
+    {"id": 2, "name": "Mouse"},
+    {"id": 3, "name": "Keyboard"},
+]
+
+orders = [
+    {"product_id": 1, "quantity": 2},
+    {"product_id": 2, "quantity": 0},
+    {"product_id": 3, "quantity": 5},
+]
+
+s = {p["name"] for p in products for o in orders if p["id"] == o["product_id"] and o["quantity"]>0}
+print(s)
+```
