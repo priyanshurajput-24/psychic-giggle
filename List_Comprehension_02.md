@@ -116,8 +116,11 @@ matrix = [
     [2, 8, 3],
     [4, 6, 7]
 ]
-results = [int(i) for i in s if i.isdigit()]
-print(results)
+n = 3 # n is the dimension of matrix
+r = [matrix[i][i] for i in range(len(matrix))]
+s = [matrix[i][n-1-i] for i in range(len(matrix))]
+print(r)
+print(s)
 ```
 
 * `(i, i) `        - The main diagonal
